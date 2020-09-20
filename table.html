@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<body>
+<form>
+<input type = "text" id ="num"/>
+<br/>
+<input type ="button" value = "get table" onclick = "getTable()";/>
+<br/>
+<table id = "result" border ="1">
+</table>
+</form>
+</body>
+<script>
+function getTable() {
+var x = parseInt(document.getElementById("num").value);
+var result_str = "";
+for(let i=0;i<=10;i++)
+{
+console.log(x * i);
+result_str +="<tr><td>"+x+" * "+i+"</td><td>"+(x * i)+"</td></tr>";
+}
+console.log(result_str);
+document.getElementById("result").innerHTML = result_str;
+}
+</script>
+
+</html>
+

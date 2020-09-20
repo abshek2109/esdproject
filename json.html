@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<body>
+<table border = "1">
+<thread>
+<th>First Name</th>
+<th>Last Name</th>
+<th>City</th>
+</thread>
+
+
+</tbody>
+<script>
+record1 = {
+ "fname" : "Shailesh",
+  "lname" : "Sonare",
+  "city" : "Mumbai"
+  }
+  record2 = {
+ "fname" : "Dhinchak",
+  "lname" : "Pooja",
+  "city" : "Delhi"
+  }
+  record3 = {
+ "fname" : "Sonam",
+  "lname" : "Gupta",
+  "city" : "Bewafa nagar"
+  }
+records = [record1 ,record2, record3];
+console.log(records);
+
+var output_str="";
+for(let i = 0; i< records.length; i++){
+output_str += "<tr>";
+output_str += "<td>" + records[i].fname + "</td>";
+output_str += "<td>" + records[i].lname + "</td>";
+output_str += "<td>" + records[i].city + "</td>";
+output_str += "</tr>;
+}
+document.getElementById("result").innerHTML = output_str;
+
+ 
+</script>
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<body>
+<form>
+<input type = "text" id="num"/>
+<br/>
+<input type = "button" onclick = "square()" value ="Square"/>
+<br/>
+<input type = "text" id = "result"/>
+</form>
+<script>
+  function square(){
+  var x = parseInt(document.getElementById("num").value);
+  document.getElementById("result").value= x*x;
+  }
+</script>
+</body>
+</html>
